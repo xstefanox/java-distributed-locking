@@ -10,7 +10,6 @@ import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import spark.Spark;
-import spark.route.RouteOverview;
 
 import static spark.Spark.exception;
 import static spark.Spark.get;
@@ -24,8 +23,6 @@ public class Main {
     public static void main(String... args) throws Exception {
 
         Spark.port(8080);
-
-        RouteOverview.enableRouteOverview();
 
         /*
          * ZOOKEEPER
